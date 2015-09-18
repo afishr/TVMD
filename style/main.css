@@ -1,97 +1,95 @@
 /* Snippets */
-
 .clearfix::before,
 .clearfix::after {
-  content: '';
-  display: block;
-  height: 0;
-  clear: both;
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 .left {
-  float: left;
+	float: left;
 }
 
 .right {
-  float: right;
+	float: right;
 }
 
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 /* Main */
-
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 #screen iframe {
-  display: block;
-  width: 1040px;
-  height: 650px;
-  margin: 0 auto;
+	display: block;
+	width: 1040px;
+	height: 650px;
+	margin: 0 auto;
 }
 
 #buttons_wrap {
-  position: relative;
-  display: block;
-  z-index: 100;
-  width: 1040px;
-  margin: 30px auto;
+	position: relative;
+	display: block;
+	z-index: 100;
+	width: 1040px;
+	margin: 30px auto;
 }
 
 .button {
-  display: inline-block;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 10px;
-  cursor: url("../img/point.cur"), pointer;
-  margin-right: 50px;
-  margin-bottom: 20px;
+	display: inline-block;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-right: 50px;
+	margin-bottom: 20px;
 }
 
 #buttons_wrap .button:hover {
-  background: #85d3f5;
-  color: #000;
+	background: #85d3f5;
+	color: #000;
 }
 
 .button:nth-child(5n) {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 #publika {
-  color: #fff;
-  background-color: #0086ff;
+	color: #fff;
+	background-color: #0086ff;
 }
 
 #jurnal_tv {
-  background: #254a98;
-  color: #fff;
+	background: #254a98;
+	color: #fff;
 }
 
 #tv7 {
-  background: #292669;
-  color: #109447;
+	background: #292669;
+	color: #109447;
 }
 
 #protv {
-  color: #fff;
-  background: #054fec;
+	color: #fff;
+	background: #054fec;
 }
 
 #moldova {
-  background: #04aeec;
-  color: #fff;
+	background: #04aeec;
+	color: #fff;
 }

@@ -30,11 +30,20 @@ body {
 	position: relative;
 }
 
-#screen iframe {
-	display: block;
-	width: 1040px;
+#screen {
+	overflow: hidden;
+	width: 940px;
 	height: 650px;
 	margin: 0 auto;
+	position: relative;
+}
+
+#screen iframe {
+	position: absolute;
+	top: -400px;
+	height: 1050px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 #buttons_wrap {
@@ -58,10 +67,14 @@ body {
 	cursor: pointer;
 	margin-right: 50px;
 	margin-bottom: 20px;
+	transition: all 0.2s ease-in-out;
+	border: 2px solid transparent;
 }
 
-#buttons_wrap .button:hover {
-	background: #85d3f5;
+#buttons_wrap .button:hover,
+#buttons_wrap .button.active {
+	border-color: #000;
+	background-color: transparent;
 	color: #000;
 }
 

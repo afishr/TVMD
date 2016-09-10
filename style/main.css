@@ -69,9 +69,26 @@ body {
 	margin-bottom: 20px;
 	transition: all 0.2s ease-in-out;
 	border: 2px solid transparent;
+	position: relative;
 }
 
-#buttons_wrap .button:hover,
+.button::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background-color: transparent;
+	transition: all 0.15s ease-in-out;
+	border-radius: 10px;
+}
+
+.button:hover::after {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 #buttons_wrap .button.active {
 	border-color: #000;
 	background-color: transparent;

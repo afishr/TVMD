@@ -3,15 +3,23 @@
 			frame = document.getElementById('window');
 
 	button.addEventListener('click', function(event) {
-		var url = event.target.getAttribute('data-url');
-
-		var htmlClass = event.target.className;		
-		for (var i = 0; i < button.childNodes.length; i++) {
-			button.childNodes[i].className = htmlClass;
-		};
-
-		event.target.className = htmlClass + ' ' + 'active';
-
+		var url = event.target.getAttribute('data-url'),
+			flag = false,
+			target = event.target;
+		
+		if(target.getAttribute('id') !== 'buttons_wrap') {
+			if(target.classList.contains('active')) {
+				flag = true;
+			}
+			for (var i = 0; i < button.children.length; i++) {
+				button.children[i].classList.remove('active');
+			};
+			if(flag) {
+				target.classList.remove('active');
+			} else {
+				target.classList.add('active');
+			};
+		}
 		frame.setAttribute('src', 'http://www.tvmd.info/' + url);
 	});
 })();
